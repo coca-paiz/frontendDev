@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website de Prueba</title>
+    <style>
+      * {
+        color: black;
+      }
+      *:hover {
+        color: green;
+      }
+      #otra-capa + h3 {
+        color: green;
+      }
+      #otra-capa + h3:hover {
+        color: black;
+      }
+    </style>
   </head>
   <body>
-    <h1>
+    <h1 id="otra-capa">
       Los ornitorrincos desvelan secretos sobre la evolución de los mamíferos
     </h1>
     <h3>
@@ -18,7 +32,13 @@
       los dos que normalmente tienen el resto de mamíferos, entre ellos los
       humanos.
     </h3>
-    <img src="./assets/perryElOrnitorrinco.jpg" alt="Ornitorrinco" />
+    <img
+      src="https://static01.nyt.com/images/2010/01/19/science/19obvenom/articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+      alt="Ornitorrinco"
+    />
+    <p></p>
+    <label for="name">Qué piensas sobre los Ornitorrincos</label>
+    <input type="text" name="name" id="name" />
     <h4>
       El ornitorrinco es una de las criaturas más raras del mundo: aunque es un
       mamífero, pone huevos; y amamanta a sus crías pero no tienen mamas.
@@ -36,5 +56,10 @@
       recientemente en la revista Nature, aportan nuevos datos sobre esta
       criatura y su evolución.
     </p>
+    <p>Este blog se copió de otro con fines educativos.</p>
+    <a
+      href="https://www.nationalgeographic.com.es/naturaleza/ornitorrincos-desvelan-secretos-sobre-evolucion-mamiferos_16297"
+      >Este es el post original de NatGeo</a
+    >
   </body>
 </html>
