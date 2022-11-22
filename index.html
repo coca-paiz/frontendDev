@@ -6,17 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website de Prueba</title>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
       * {
-        background-color: papayawhip;
-      }
-      * {
-        color: green;
-      }
-      *:hover {
+        background-color: white;
         color: black;
       }
-      *::first-letter {
+      *:hover {
         color: green;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #nav1{
+        width: 100%;
+        height:50px;
+        background-color: black;
+        position: fixed;
+        margin: 0% 0% 0% 0%;
+        top: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-top: 4px solid #ffce00;
+      }
+      .topper_links{
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: transparent;
+        color: white;
+        font-family: 'Montserrat',serif;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      #naav{
+        width: 100%;
+        height:80px;
+        padding: 10px;
+        background-color: white;
+        position: fixed;
+        margin: 0% 0% 0% 0%;
+        top: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav_objects{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      #bar{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+      }
+      #start{
+        display: flex;
+        align-items: center;
+      }      
+      #user{
+        width: 30px;
+        height: 30px;
+      }
+      #suscribete{
+        width: 122px;
+        text-transform: uppercase;
+        height: 37px;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        padding: 16px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: all .3s ease-in-out;
+        display: flex;
+        align-items: center;
+        background-color: #ffce00;
+      }
+      #logoNG{
+        height: 80px
+      }
+      #link_Tags{
+        font-size: 14px;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin: 150px 0px 0px 0px;
+      }
+      .tag1{
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #header {
+        display: flex;
+        justify-content: center;
+      }
+      .both_content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 800px;
+        font-weight: 400;
+      }
+      #titleh1 {
+        font-weight: 400;
+        font-size: 40px;
+        font-family: "Playfair Display", serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .tiitle {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .tittle + h3 {
+        color: black;
+      }
+      .tittle + h3:hover {
+        color: green;
+      }
+      #subtitle {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.28;
+        letter-spacing: 0.2px;
+        margin: 0 13px 18px;
       }
       h1::before {
         content: "🦆";
@@ -24,54 +143,127 @@
       h1::after {
         content: "🦫";
       }
-      #otra-capa + h3 {
+      ::placeholder {
         color: black;
       }
-      #otra-capa + h3:hover {
-        color: green;
+      #footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        width: 800px;
+        font-weight: 400;
+      }
+      #photo_text{
+        font-family: 'Roboto', sans-serif;
+        border-left: 4px solid #ffce00;
+        padding-left: 8px;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.28;
+        letter-spacing: .2px;
+        text-align: left;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        color: inherit;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: 100%;
+        box-sizing: border-box;
+
+      }
+      .subte{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      #opinion{
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <h1 id="otra-capa">
-      Los ornitorrincos desvelan secretos sobre la evolución de los mamíferos
-    </h1>
-    <h3>
-      El análisis genético de los ornitorrincos y los equidnas ha proporcionado
-      a los científicos algunas claves sobre la evolución de los mamíferos.
-      Estas extrañas criaturas son los únicos mamíferos conocidos que ponen
-      huevos y ahora se sabe que cuentan con 10 cromosomas sexuales en lugar de
-      los dos que normalmente tienen el resto de mamíferos, entre ellos los
-      humanos.
-    </h3>
-    <img
-      src="https://static01.nyt.com/images/2010/01/19/science/19obvenom/articleLarge.jpg?quality=75&auto=webp&disable=upscale"
-      alt="Ornitorrinco"
-    />
-    <p></p>
-    <label for="name">Qué piensas sobre los Ornitorrincos</label>
-    <input type="text" name="name" id="name" />
-    <h4>
-      El ornitorrinco es una de las criaturas más raras del mundo: aunque es un
-      mamífero, pone huevos; y amamanta a sus crías pero no tienen mamas.
-    </h4>
-    <p>
-      El ornitorrinco, una especie endémica de Australia occidental y de la isla
-      de Tasmania parecido a un castor y dotado de un pico de pato, exhibe una
-      variedad de características extrañas: pone huevos en lugar de dar a luz
-      crías vivas, produce leche y tiene unos espolones venenosos, además de
-      muchos más cromosomas sexuales que los demás mamíferos. Por algo es
-      considerado uno de los animales más extraños del mundo. Ahora, un equipo
-      internacional de investigadores dirigido por la Universidad de Copenhague
-      ha realizado un exhaustivo análisis del genoma de esta extraña criatura y
-      de sus primos hermanos: los equidnas. Sus conclusiones, publicadas
-      recientemente en la revista Nature, aportan nuevos datos sobre esta
-      criatura y su evolución.
-    </p>
-    <p>Este blog se copió de otro con fines educativos.</p>
-    <a
-      href="https://www.nationalgeographic.com.es/naturaleza/ornitorrincos-desvelan-secretos-sobre-evolucion-mamiferos_16297"
-      >Este es el post original de NatGeo</a
-    >
+    <header id="header">
+      <nav id="nav1">
+          <a class="topper_links" style="text-decoration:none" href="https://www.nationalgeographic.com.es/?_ga=2.183688614.1099530455.1668997620-1864435954.1668997620">NG ESPAÑA</a>
+          <a class="topper_links" style="text-decoration:none" href="https://viajes.nationalgeographic.com.es/?_ga=2.183688614.1099530455.1668997620-1864435954.1668997620">VIAJES NG</a>
+          <a class="topper_links" style="text-decoration:none" href="https://historia.nationalgeographic.com.es/?_ga=2.144373301.1099530455.1668997620-1864435954.1668997620">HISTORIA NG</a>
+      </nav>      
+      <nav id="naav">
+          <div class="nav_objects" id="start">
+            <img class="nav_objects" src="https://www.nationalgeographic.com.es/Content/img/wall/ic-user.png" alt="user" id="user">
+            <p>INICIAR SESIÓN</p>
+          </div>
+          <img class="nav_objects" src="https://1000marcas.net/wp-content/uploads/2020/03/logo-National-Geographic.png" alt="Logo NatGeo" id="logoNG">
+          <div class="nav_objects">
+            <a style="text-decoration:none" href="https://tienda.rba.es/revistas/national-geographic/suscripcion/suscripcion-national-geographic?rba_source=nationalgeographic.com.es&rba_medium=referral&rba_campaign=NGME&rba_content=header" id="suscribete">Suscríbete</a>
+          </div>        
+      </nav>
+      <div class="both_content">
+        <p id="link_Tags" class="tiitle">
+          <a style="text-decoration:none" href="https://www.nationalgeographic.com.es/temas" class="tag1">Temas</a>
+          /
+          <a style="text-decoration:none" href="https://www.nationalgeographic.com.es/temas/evolucion" class="tag1">Evolución</a
+          >
+        </p>
+        <h1 class="tiitle" id="#titleh1">
+          Los ornitorrincos desvelan secretos sobre la evolución de los
+          mamíferos
+        </h1>
+        <h2 id="subtitle" class="tiitle">
+          El análisis genético de los ornitorrincos y los equidnas ha
+          proporcionado a los científicos algunas claves sobre la evolución de
+          los mamíferos. Estas extrañas criaturas son los únicos mamíferos
+          conocidos que ponen huevos y ahora se sabe que cuentan con 10
+          cromosomas sexuales en lugar de los dos que normalmente tienen el
+          resto de mamíferos, entre ellos los humanos.
+        </h2>
+        <img
+          src="https://static01.nyt.com/images/2010/01/19/science/19obvenom/articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+          alt="Ornitorrinco"
+          class="tiitle"
+        />
+      </div>
+    </header>
+    <footer id="footer">
+      <div class="both_content">
+        <h4 class="subte" id="photo_text">
+          El ornitorrinco es una de las criaturas más raras del mundo: aunque es
+          un mamífero, pone huevos; y amamanta a sus crías pero no tienen mamas.
+        </h4>
+        <div id="opinion">
+          <label for="name">Qué piensas sobre los Ornitorrincos?   </label class="subte">
+          <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Cuentame"
+          />
+        </div>
+        <p class="subte">
+          El ornitorrinco, una especie endémica de Australia occidental y de la
+          isla de Tasmania parecido a un castor y dotado de un pico de pato,
+          exhibe una variedad de características extrañas: pone huevos en lugar
+          de dar a luz crías vivas, produce leche y tiene unos espolones
+          venenosos, además de muchos más cromosomas sexuales que los demás
+          mamíferos. Por algo es considerado uno de los animales más extraños
+          del mundo. Ahora, un equipo internacional de investigadores dirigido
+          por la Universidad de Copenhague ha realizado un exhaustivo análisis
+          del genoma de esta extraña criatura y de sus primos hermanos: los
+          equidnas. Sus conclusiones, publicadas recientemente en la revista
+          Nature, aportan nuevos datos sobre esta criatura y su evolución.
+        </p>
+        <p class="subte">Este blog se copió de otro con fines educativos.</p>
+        <a
+          style="text-decoration:none" href="https://www.nationalgeographic.com.es/naturaleza/ornitorrincos-desvelan-secretos-sobre-evolucion-mamiferos_16297"
+           class="subte" >Este es el post original de NatGeo</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
